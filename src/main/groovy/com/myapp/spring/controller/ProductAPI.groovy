@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 
 import com.myapp.spring.domain.Product
 import com.myapp.spring.service.ProductService
-
+// Changes done by me
 @RestController
 @RequestMapping("/api/products")
 class ProductAPI {
