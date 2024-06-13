@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment
+  labels:
+    app: spring-jenkins-ci-cd
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spring-jenkins-ci-cd
+  template:
+    metadata:
+      labels:
+        app: spring-jenkins-ci-cd    
+    spec:
+      containers:
+      - name: spring-jenkins-ci-cd
+        image: yashpandeywork/spring-jenkins-ci-cd
+        ports:
+        - containerPort: 8888
