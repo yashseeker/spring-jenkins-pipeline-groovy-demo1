@@ -100,7 +100,7 @@ bat("kubectl apply -f service.yaml")
 
 }
 
-}
+
 
     }
      post {
