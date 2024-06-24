@@ -1,6 +1,0 @@
-FROM eclipse-temurin:17
-RUN mkdir -p /app1
-WORKDIR /app1
-VOLUME "/tmp"
-COPY target/*.jar app.jar
-ENTRYPOINT [ "java","-jar","/app1/app.jar" ]
